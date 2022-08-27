@@ -58,6 +58,15 @@ button.addEventListener('click', () => {
     }
 
     console.log('total de moedas: ' + somaArray);
-    somaArray = 0;
+
+    const saidaMoedas = document.getElementById('resultados')
+    saidaMoedas.innerHTML = `<p>Total de moedas: ${somaArray}</p>
+                            <p>Sendo:</p>
+                            <p>${quantidade50c} de 50 centavos</p>
+                            <p>${quantidade25c} de 25 centavos</p>
+                            <p>${quantidade10c} de 10 centavos</p>
+                            <p>${quantidade5c} de 5 centavos</p>
+                            <p>${quantidade1c} de 1 centavo</p>`
   }
+  somaArray = 0;
 })
