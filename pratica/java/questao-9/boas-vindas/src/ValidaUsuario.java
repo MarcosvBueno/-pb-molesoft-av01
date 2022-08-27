@@ -21,6 +21,7 @@ public class ValidaUsuario {
 		usuario = sc.nextLine();
 		System.out.println("Indique sua senha:");
 		senha = sc.nextLine();
+		System.out.println("");
 		
 		if( usuario.equals(meuArray[0]) == false || senha.equals(meuArray[1]) == false ) {
 			System.out.println("Usuário e/ou senha incorretos");
